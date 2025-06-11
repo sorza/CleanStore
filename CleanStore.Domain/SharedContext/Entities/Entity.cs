@@ -8,9 +8,7 @@ namespace CleanStore.Domain.SharedContext.Entities
         public Guid Id { get; init; } = id;
 
         public IReadOnlyList<IDomainEvent> GetDomainEvents => _domainEvents;
-
-        public void ClearDomainEvents() => _domainEvents.Clear();
-        
+        public void ClearDomainEvents() => _domainEvents.Clear();        
         public void RaiseDomainEvent(IDomainEvent @event) => _domainEvents.Add(@event);
 
         public bool Equals(Entity? other)
