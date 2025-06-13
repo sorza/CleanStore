@@ -1,10 +1,11 @@
 ﻿using CleanStore.Domain.AccountContext.Events;
 using CleanStore.Domain.AccountContext.ValueObjects;
+using CleanStore.Domain.SharedContext.AggregateRoots.Abstractions;
 using CleanStore.Domain.SharedContext.Entities;
 
 namespace CleanStore.Domain.AccountContext.Entities
 {
-    public sealed class Account : Entity
+    public sealed class Account : Entity, IAggregateRoot
     {       
         #region Constructors
         private Account() : base(Guid.NewGuid())
