@@ -11,7 +11,7 @@ namespace CleanStore.Domain.AccountContext.ValueObjects
 
         public const int MaxLength = 160;
         public const int MinLength = 6;
-        private const string Pattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+        public const string Pattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
 
         #endregion
 
