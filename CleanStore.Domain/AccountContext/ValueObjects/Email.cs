@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace CleanStore.Domain.AccountContext.ValueObjects
 {
-    public partial record Email : ValueObject
+    public sealed partial record Email : ValueObject
     {
         #region Constants
 
