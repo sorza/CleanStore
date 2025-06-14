@@ -14,8 +14,8 @@ namespace CleanStore.Application
                 x.AddOpenBehavior(typeof(LoggingBehavior<,>));
                 x.AddOpenBehavior(typeof(ValidationBehavior<,>));
             });
-
-            services.AddValidatorsFromAssemblies(typeof(DependencyInjection).Assembly);
+           
+            services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
 
             return services;
         }
