@@ -2,7 +2,7 @@
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanStore.Application
+namespace CleanStore.Application.SharedContext
 {
     public static class DependencyInjection
     {

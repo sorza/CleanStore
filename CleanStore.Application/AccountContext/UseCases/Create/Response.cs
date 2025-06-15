@@ -2,5 +2,5 @@
 
 namespace CleanStore.Application.AccountContext.UseCases.Create
 {
-    public sealed record Response(Guid id, string Email) : ICommandResponse;   
+    public sealed record Response(Guid Id, string Email) : ICommandResponse;   
 }

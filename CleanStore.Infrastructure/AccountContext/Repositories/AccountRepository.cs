@@ -11,7 +11,7 @@ namespace CleanStore.Infrastructure.AccountContext.Repositories
             => await context.Accounts.AddAsync(account);
 
         public async Task<bool> VerifyEmailExistsAsync(string email) 
-            => await context.Accounts.AsNoTracking().AnyAsync(a => a.Email == email);
+            => await context.Accounts.AsNoTracking().AnyAsync(a => a.Email.Address == email);
         
     }
 }
