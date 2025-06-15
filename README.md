@@ -1,2 +1,7 @@
 # CleanStore
-clean arch project example 
+Arquitetura Limpa na Prática
+
+|**Conceitos / Tecnologias Aplicadas**|
+|-----------------------------------|
+| DDD |
+| Domain Events |
